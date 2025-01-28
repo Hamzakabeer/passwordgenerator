@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container" id="">
+        <h1>Password Generator</h1>
+        <div class="form-group">
+            <label for="password-length">Password Length:</label>
+            <input type="number" id="password-length" value="22" min="1">
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="IncludeNumber"> Include Numbers (e.g. 123456)
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="IncludeLower"> Include Lowercase Characters (e.g. abcdefg)
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="IncludeUpper"> Include Uppercase Characters (e.g. ABCDEFG)
+            </label>
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox"  id="symbols"> Include Symbols (!@#$%^&*...)
+            </label>
+        </div>
+        <div class="form-group">
+            <label> quantity
+             <input type="number" id="numbergen">
+            </label>
+        </div>
+      
+        <div class="buttons">
+            <button   onclick="generatPass()">Generate </button>
+            
+        </div>
+        <div class="password-list">
+            <textarea readonly id="passshower">Your New Passwords:</textarea>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
